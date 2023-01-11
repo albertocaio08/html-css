@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Rowdies:wght@700&display=swap');
+
+*{
+    margin: 0px;
+}
+
+:root{
+    --cor0: white;
+    --fonth1: 'Rowdies', cursiva;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    background-color: black;
+    height: 200px;
+}
+
+h1{
+    
+    color: var(--cor0);
+    text-align: center;
+    font-size: 4em;
+    padding: 40px 0px 10px 0px;
+    font-family: var(--fonth1);
+}
+
+aside > p{
+    color: var(--cor0);
+    text-align: center;
+}
+
+p > a{
+    color: var(--cor0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p > a:hover{
+    color: rgb(112, 112, 182);
+    text-decoration: underline;
+}
+
+main{
+    min-width: 230px;
+    max-width: 865px;
+}
