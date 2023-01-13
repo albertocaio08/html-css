@@ -22,13 +22,16 @@ header{
     background-color: black;
     text-align: center;
     color: var(--cor0);
-    font-family: var(--fonth1);
+    min-width: 230px;
 }
 
 
 header > h1{
   padding-top: 50px;
   font-variant: small-caps;
+  font-family: var(--fonth1);
+  font-size: 3em;
+  
 }
 
 aside > p{
@@ -46,26 +49,44 @@ a:hover{
     text-decoration: underline;
 }
 
+main{
+    max-width: 800px;
+    min-width: 230px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.439);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
 }
-
+    
 section.normal{
    background-color: antiquewhite;;
    color: black;
 }
 
+
 section.imagem{
-    background-color: rgba(36, 34, 34, 0.767);
     color: var(--cor0);
+    background-image: url(imagens/background001.jpg);
 }
 
 section.imagem > p{
     background-color: rgba(29, 28, 28, 0.342);
     width: 300px;
+}
+
+section.normal1{
+    background-color: antiquewhite;;
+    color: black;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 footer{
