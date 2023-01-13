@@ -4,56 +4,73 @@
 
 *{
     margin: 0px;
+    padding: 0px;
 }
 
 :root{
     --cor0: white;
     --fonth1: 'Rowdies', cursiva;
+    --font2: Arial, Helvetica, sans-serif;
 }
 
-body{
+html,body{
+    min-height: 100vh;
     background-color: white;
 }
 
 header{
     background-color: black;
-    height: 200px;
-}
-
-h1{
-    
-    color: var(--cor0);
     text-align: center;
-    font-size: 4em;
-    padding: 40px 0px 10px 0px;
+    color: var(--cor0);
     font-family: var(--fonth1);
 }
 
-aside > p{
-    color: var(--cor0);
-    text-align: center;
+
+header > h1{
+  padding-top: 50px;
+  font-variant: small-caps;
 }
 
-p > a{
+aside > p{
+    padding-bottom: 50px;
+}
+
+a{
     color: var(--cor0);
     text-decoration: none;
     font-weight: bold;
 }
 
-p > a:hover{
+a:hover{
     color: rgb(112, 112, 182);
     text-decoration: underline;
 }
 
-main{
-    background-color: antiquewhite;
-    font-family: var(--fonth1);
-    font-weight: normal;
-    font-size: 1.5em;
-    margin: auto;
-    min-width: 230px;
-    max-width: 865px;
-    padding: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.439);;
-    border-radius: 10px solid black;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+   background-color: antiquewhite;;
+   color: black;
+}
+
+section.imagem{
+    background-color: rgba(36, 34, 34, 0.767);
+    color: var(--cor0);
+}
+
+section.imagem > p{
+    background-color: rgba(29, 28, 28, 0.342);
+    width: 300px;
+}
+
+footer{
+    background-color: black;
+    color: var(--cor0);
+    text-align: center;
+    padding: 5px;
 }
