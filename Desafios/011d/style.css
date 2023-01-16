@@ -82,19 +82,31 @@ section.normal{
 
 section.imagem{
     color: var(--cor0);
-    background-image: url(imagens/background001.jpg);
+    box-shadow: inset 5px 5px 10px 0px rgba(34, 33, 33, 0.582);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     background-color: rgba(109, 101, 101, 0.534);
     display: inline-block;
     padding-left: 7px;
- 
+    text-shadow: 2px 2px 0px black;
 }
 
+section#img001{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;   
+}
+
+section#img002{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
 section > p{
     width: 300px;
     font-size: 0.8em; 
+    padding-bottom: 2em;
 }
 
 section.normal1{
